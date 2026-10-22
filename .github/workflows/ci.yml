@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Self-test
+        run: echo "cleanup runbook self-test"
